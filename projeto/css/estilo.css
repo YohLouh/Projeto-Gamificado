@@ -1,0 +1,35 @@
+nav {
+    background-color: #eab919;
+    height: 70px;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    background-color: #fec300;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav img {
+    float:left;
+    max-height: 65px;
+    width: auto;
+}
+
+body {
+    background-color: #fbfbfb;
+}
