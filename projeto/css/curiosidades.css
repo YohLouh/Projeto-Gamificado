@@ -1,0 +1,38 @@
+nav {
+    background-color: #eab919;
+    width: 100%;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 20px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size:x-large;
+
+}
+
+nav ul li a:hover {
+    background-color: #ffc560;
+}
+
+nav img {
+    float:left;
+    max-height: 70px;
+    width: 100px;
+}
+
+body {
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
