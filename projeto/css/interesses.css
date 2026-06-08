@@ -12,7 +12,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: #fbfbfb;
     padding: 20px 16px;
     text-align: center;
     text-decoration: none;
@@ -26,8 +26,12 @@ nav ul li a:hover {
 
 nav img {
     float:left;
-    max-height: 70px;
-    width: 100px;
+    max-width: 150px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav img:hover{
+    transform: translateY(-5px);
 }
 
 body {

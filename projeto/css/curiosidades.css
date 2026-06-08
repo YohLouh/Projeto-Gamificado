@@ -12,7 +12,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: #fbfbfb;
     padding: 20px 16px;
     text-align: center;
     text-decoration: none;
@@ -26,8 +26,12 @@ nav ul li a:hover {
 
 nav img {
     float:left;
-    max-height: 70px;
-    width: 100px;
+    max-width: 150px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav img:hover{
+    transform: translateY(-5px);
 }
 
 body {
@@ -35,4 +39,43 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.container {
+    margin: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.texto-oculto {
+    display: none;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    color: #fbfbfb;
+    background-color: #eab919;
+    border: 10px solid #d2a616;
+}
+
+.texto-oculto:target {
+    display: block;
+}
+
+.botao {
+    display: inline-block;
+    padding: 50px 50px;
+    background-color: #ffc560;
+    color: #fbfbfb;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #ffd690;
+    color: #ff9a00;
+    transform: translateY(-5px);
 }
