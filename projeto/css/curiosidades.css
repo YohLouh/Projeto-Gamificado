@@ -45,23 +45,47 @@ body {
     margin: 20px;
     justify-content: center;
     justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    max-height: max-content;
 }
 
 .texto-oculto {
     display: none;
-    margin-top: 50px;
+    margin-top: 0px;
     font-size: 30px;
     font-family: Arial, sans-serif;
     color: #fbfbfb;
     background-color: #eab919;
     border: 10px solid #d2a616;
+    text-align: center;
+    align-content: center;
+    grid-column: span 5;
+    max-width: 600px;
+    overflow: hidden; 
+    padding: 0;
+}
+
+.texto-oculto img {
+    height: auto;
+    max-height: 200px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    margin-bottom: 5px;
+    border-bottom: 10px solid #d2a616;
 }
 
 .texto-oculto:target {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .botao {
+    width: 65%;
     display: inline-block;
     padding: 50px 50px;
     background-color: #ffc560;
@@ -69,9 +93,8 @@ body {
     font-size: 25px;
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px;
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
@@ -79,3 +102,10 @@ body {
     color: #ff9a00;
     transform: translateY(-5px);
 }
+
+.botao:active {
+  transform: scale(0.90);
+}
+
+
+
