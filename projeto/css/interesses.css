@@ -1,13 +1,18 @@
 nav {
     background-color: #eab919;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -25,8 +30,8 @@ nav ul li a:hover {
 }
 
 nav img {
-    float:left;
     max-width: 150px;
+    display: block;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -35,8 +40,60 @@ nav img:hover{
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #fbfbfb;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
+
+.hidden-checkbox {
+    display: none;
+}
+
+.container-geral {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.img-button-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.img-button {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.img-button:active {
+    transform: scale(0.95);
+}
+
+h2 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.btn1 { background-image: url('https://cdn.fatosdesconhecidos.com.br/wp-content/uploads/2016/08/beb%C3%AAs-animais-02-569x500.jpg');}
+.hidden-checkbox:checked+.btn1 { background-image: url('https://i.pinimg.com/736x/34/88/1b/34881b7fce6f8ed5104786edf52d7c6e.jpg');}
+
+.btn2 { background-image: url('https://cdn.fatosdesconhecidos.com.br/wp-content/uploads/2016/08/beb%C3%AAs-animais-02-569x500.jpg');}
+.hidden-checkbox:checked+.btn2 { background-image: url('https://i.pinimg.com/736x/34/88/1b/34881b7fce6f8ed5104786edf52d7c6e.jpg');}
+
+.btn3 { background-image: url('https://cdn.fatosdesconhecidos.com.br/wp-content/uploads/2016/08/beb%C3%AAs-animais-02-569x500.jpg');}
+.hidden-checkbox:checked+.btn3 { background-image: url('https://i.pinimg.com/736x/34/88/1b/34881b7fce6f8ed5104786edf52d7c6e.jpg');}
