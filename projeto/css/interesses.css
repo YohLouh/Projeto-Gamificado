@@ -54,9 +54,12 @@ body {
 }
 
 .container-geral {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 55px;
+    padding: 60px 40px 40px 40px;
+    justify-items: center;
+    max-width: 1000px;
 }
 
 .img-button-container {
@@ -68,32 +71,50 @@ body {
 
 .img-button {
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    background-color: #003a9f;
+    width: 180px;
+    height: 180px;
     background-size: cover;
     background-position: center;
+    border: 10px solid #0065ff;
     border-radius: 15px;
     cursor: pointer;
+    filter: invert(1);
     transition: transform 0.2s;
 }
 
 .img-button:active {
-    transform: scale(0.95);
+    transform: translateY(8px);
 }
 
 h2 {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    margin: 5px 0 0 0;
+    font-family: inherit;
+    font-size: 20px;
     color: #555;
 }
 
 
-.btn1 { background-image: url('https://cdn.fatosdesconhecidos.com.br/wp-content/uploads/2016/08/beb%C3%AAs-animais-02-569x500.jpg');}
-.hidden-checkbox:checked+.btn1 { background-image: url('https://i.pinimg.com/736x/34/88/1b/34881b7fce6f8ed5104786edf52d7c6e.jpg');}
+.btn1 { background-image: url('../image/ícones/Doce.png');}
+.hidden-checkbox:checked+.btn1 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Doce2.png');}
 
-.btn2 { background-image: url('https://cdn.fatosdesconhecidos.com.br/wp-content/uploads/2016/08/beb%C3%AAs-animais-02-569x500.jpg');}
-.hidden-checkbox:checked+.btn2 { background-image: url('https://i.pinimg.com/736x/34/88/1b/34881b7fce6f8ed5104786edf52d7c6e.jpg');}
+.btn2 { background-image: url('../image/ícones/Cor.png');}
+.hidden-checkbox:checked+.btn2 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Cor2.png');}
 
-.btn3 { background-image: url('https://cdn.fatosdesconhecidos.com.br/wp-content/uploads/2016/08/beb%C3%AAs-animais-02-569x500.jpg');}
-.hidden-checkbox:checked+.btn3 { background-image: url('https://i.pinimg.com/736x/34/88/1b/34881b7fce6f8ed5104786edf52d7c6e.jpg');}
+.btn3 { background-image: url('../image/ícones/Local.png');}
+.hidden-checkbox:checked+.btn3 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Local2.png');}
+
+.btn4 { background-image: url('../image/ícones/Astro.png');}
+.hidden-checkbox:checked+.btn4 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Astro2.png');}
+
+.btn5 { background-image: url('../image/ícones/Draw.png');}
+.hidden-checkbox:checked+.btn5 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Draw2.png');}
+
+.btn6 { background-image: url('../image/ícones/Game.png');}
+.hidden-checkbox:checked+.btn6 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Game2.png');}
+
+.btn7 { background-image: url('../image/ícones/Music.png');}
+.hidden-checkbox:checked+.btn7 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Music2.png');}
+
+.btn8 { background-image: url('../image/ícones/Terror.png');}
+.hidden-checkbox:checked+.btn8 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Terror2.png');}
