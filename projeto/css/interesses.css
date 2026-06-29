@@ -118,3 +118,25 @@ h2 {
 
 .btn8 { background-image: url('../image/ícones/Terror.png');}
 .hidden-checkbox:checked+.btn8 { filter: invert(0); border: 10px solid #ff9a00; background-image: url('../image/ícones/Dentro/Terror2.png');}
+
+
+@media(max-width:768px){
+    nav{
+        padding: 0 10px;
+    }
+
+    nav img{
+        max-width: 100px;
+    }
+
+    nav ul li a{
+        font-size: large;
+        padding: 15px 8px;
+    }
+
+
+    .container-geral{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

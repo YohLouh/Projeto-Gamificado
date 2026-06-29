@@ -175,3 +175,39 @@ summary:hover {
         transform: translateY(0);
     }
 }
+
+@media(max-width:768px){
+    nav{
+        padding: 0 10px;
+    }
+
+    nav img{
+        max-width: 100px;
+    }
+
+    nav ul li a{
+        font-size: large;
+        padding: 15px 8px;
+    }
+
+
+    .texto1 {
+        padding: 20px;
+        font-size: 16px; 
+    }
+
+    .texto1 h2 {
+        font-size: 22px; 
+        margin-bottom: 10px;
+    }
+
+    summary {
+        font-size: 16px; 
+        padding: 8px 0;
+    }
+
+    .content-expanded {
+        font-size: 15px; 
+        line-height: 1.5;
+    }
+}
